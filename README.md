@@ -45,11 +45,6 @@ The code is organized into two main sections: data preprocessing and LSTM classi
 
 2. Run the script in MATLAB.
 
-## File Structure
-
-- **Main Script:** `drowsiness_detection.m`
-- **Saved Data:** Segmented data is saved in the specified directory.
-
 ## Results
 
 After running the script, the accuracy of the LSTM network is displayed along with a confusion matrix.
