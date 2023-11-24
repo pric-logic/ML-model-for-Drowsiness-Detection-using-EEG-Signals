@@ -10,7 +10,7 @@ This project implements a drowsiness detection system using EEG signals. The cod
 Before running the code, ensure that you have the following:
 
 - MATLAB installed on your machine.
-- EEG dataset (downloaded from the provided link)
+- EEG dataset (download it from this link(https://figshare.com/articles/dataset/The_original_EEG_data_for_driver_fatigue_detection/5202739))
 - EEGLAB toolbox
 
 ## Code Structure
@@ -58,9 +58,7 @@ After running the script, the accuracy of the LSTM network is displayed along wi
 - The script assumes a specific file structure. Modify paths if your setup is different.
 - EEGLab toolbox is required for data loading and preprocessing.
 - The provided model achieves an accuracy above 90%, as mentioned in the repository.
-## Citation
 
-If you use this code or the provided dataset, please cite the original work by Hu and Min (2018).
 
 **Reference:**
 - Hu, S., & Min, J. (2018). [Driver fatigue detection with single-channel EEG data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6198113/). *Computational Intelligence and Neuroscience*, 2018.
