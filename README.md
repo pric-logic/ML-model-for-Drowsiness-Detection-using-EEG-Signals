@@ -3,14 +3,15 @@
 
 ## Overview
 
-This project implements a drowsiness detection system using EEG signals. The code processes EEG data, extracts features, and trains a Long Short-Term Memory (LSTM) neural network for classification. The system distinguishes between states of "fatigue" and "normal" based on the processed EEG data.
+This project implements a drowsiness detection system using EEG signals. The code processes EEG data, extracts features, and trains a Long Short-Term Memory (LSTM) neural network for classification. The system distinguishes between states of "fatigue" and "normal" based on the processed EEG data. The labeled dataset used for training is based on the work by Hu and Min (2018), containing EEG data from twelve healthy subjects in different states during driving.
 
 ## Prerequisites
 
 Before running the code, ensure that you have the following:
 
 - MATLAB installed on your machine.
-- EEG data files in the specified directory structure. Update file paths in the code accordingly.
+- EEG dataset (downloaded from the provided link)
+- EEGLAB toolbox
 
 ## Code Structure
 
@@ -53,13 +54,17 @@ The code is organized into two main sections: data preprocessing and LSTM classi
 
 After running the script, the accuracy of the LSTM network is displayed along with a confusion matrix.
 
-## Notes
+# Notes
+- The script assumes a specific file structure. Modify paths if your setup is different.
+- EEGLab toolbox is required for data loading and preprocessing.
+- The provided model achieves an accuracy above 90%, as mentioned in the repository.
+## Citation
 
-- The code assumes the availability of MATLAB and the specified EEG data files.
+If you use this code or the provided dataset, please cite the original work by Hu and Min (2018).
 
-- Ensure that all required MATLAB toolboxes are installed.
+**Reference:**
+- Hu, S., & Min, J. (2018). [Driver fatigue detection with single-channel EEG data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6198113/). *Computational Intelligence and Neuroscience*, 2018.
 
-- Adjust hyperparameters and network architecture as needed.
 
 ## Disclaimer
 
